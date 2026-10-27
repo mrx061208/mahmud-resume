@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HERMESSHOP — Motion Showreel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Inter:wght@500;600&display=swap">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#0b0a09;--fg:#f4efe6;--ac:#f37021}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*{box-sizing:border-box}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:12px}
+#wrap{width:min(100%,1280px)}
+canvas{width:100%;aspect-ratio:16/9;display:block;border-radius:10px;background:#14110f;cursor:pointer}
+.bar{width:min(100%,1280px);display:flex;gap:12px;align-items:center}
+button{background:var(--ac);color:#fff;border:0;border-radius:999px;padding:9px 18px;font:600 14px Inter,system-ui,sans-serif;cursor:pointer}
+button.g{background:#2a2622;color:var(--fg)}
+input[type=range]{flex:1;accent-color:var(--ac)}
+#tm{font-variant-numeric:tabular-nums;font-size:13px;opacity:.7;min-width:44px;text-align:right}
+
+body{padding:0;gap:0;height:100%;min-height:0;overflow:hidden}
+#wrap{width:100%;max-width:none}
+canvas{border-radius:0;cursor:default}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<div id="wrap"><canvas id="c" width="1920" height="1080" role="img" aria-label="HERMESSHOP — анимационная презентация магазина сумок"></canvas></div>
+
+<script src="hermesshop-showreel.js"></script>
+</body>
+</html>

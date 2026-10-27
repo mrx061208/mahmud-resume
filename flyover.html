@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Махмуджон Махмудов — резюме в 3D</title><meta name="description" content="3D-презентация резюме Махмуджона Махмудова: пролёт камеры и объёмные блоки."><meta name="theme-color" content="#f3f5fa">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@500&family=Instrument+Serif:ital@1&display=swap">
+<style>
+:root{--bg:#f2f3f6;--fg:#1a2133;--ac:#14808a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10151f;--fg:#e8edf5;--ac:#5fe0e0}}
+:root[data-theme=dark]{--bg:#10151f;--fg:#e8edf5;--ac:#5fe0e0}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:Geist,system-ui,"Segoe UI",Arial,sans-serif;overflow:hidden}
+#box{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:10px}
+#fit{position:relative;overflow:hidden;border-radius:12px}
+#st{position:absolute;left:0;top:0;width:1440px;height:1152px;transform-origin:0 0}
+canvas{display:block}
+#ov{position:absolute;inset:0;pointer-events:none;text-align:center;color:#101319}
+#badge{position:absolute;left:50%;top:44px;transform:translateX(-50%);background:#fff;border-radius:99px;padding:9px 22px 9px 10px;display:flex;gap:10px;align-items:center;font-size:21px;box-shadow:0 6px 24px rgba(26,33,51,.1);white-space:nowrap}
+#badge i{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,#2fd6d2,#13a3b8);color:#fff;font-style:normal;font-weight:500;display:grid;place-items:center;font-size:18px}
+.l{position:absolute;left:0;right:0;white-space:nowrap}
+#l1{top:104px;font-size:74px;line-height:84px;font-weight:500;letter-spacing:-1.5px}
+#l2{top:184px;font-size:82px;line-height:90px;font-family:"Instrument Serif",Georgia,serif;font-style:italic;color:#8b8b92}
+.w{display:inline-block;margin:0 .13em;will-change:transform,filter,opacity}
+
+:root,:root:not([data-theme=light]){color-scheme:light;--bg:#f3f5fa;--fg:#3b4d70;--ac:#305ce8}
+:root[data-theme=dark]{--bg:#f3f5fa;--fg:#3b4d70;--ac:#305ce8}
+body{background:#f3f5fa}
+#fit{border-radius:8px}
+#badge i{background:linear-gradient(135deg,#9eb7ff,#3767e4)}
+a:focus-visible{outline:3px solid #305ce8;outline-offset:4px}
+.back-link{position:fixed;left:20px;top:16px;z-index:5;color:#4b6292;font-size:11px;text-decoration:none;background:#ffffffe6;padding:10px 14px;border:1px solid #dce4f4;border-radius:4px}
+.embedded .back-link{display:none}
+#box{gap:4px}
+.fallback-image{display:block;max-height:calc(100vh - 100px);max-width:100%;object-fit:contain;margin:auto}
+#scene-status{font-size:12px;text-align:center;margin:8px 16px}
+@media(max-width:600px){.back-link{top:8px;left:8px;padding:7px 10px;font-size:10px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style></head><body><a class="back-link" href="index.html">← Портфолио</a>
+<div id="box"><div id="fit"><div id="st"><canvas id="c" width="1440" height="1152" role="img" aria-label="Объёмная презентация резюме Махмуджона Махмудова"></canvas>
+<div id="ov"><div id="badge"><i>М</i>Махмуджон Махмудов</div><div class="l" id="l1"></div><div class="l" id="l2"></div></div></div></div>
+<p id="scene-status" role="status" hidden></p></div>
+<script src="flyover-assets.js"></script>
+<script src="flyover-scene.js"></script></body></html>

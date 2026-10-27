@@ -1,0 +1,8 @@
+Method: built-in image_gen image editing, followed by high-quality bicubic resizing.
+Source: C:/Users/User/Pictures/photo_2026-10-26_09-00-53.jpg
+Generated image resolution: 1086 x 1448 pixels.
+Exported portrait master: profile-4k.jpg, 2880 x 3840 pixels (upscaled).
+Website image: profile-suit.jpg, 960 x 1280 pixels.
+
+Final image_gen prompt:
+Use case: identity-preserve. Edit target: the provided photograph. Restore and upscale this exact existing portrait for use as this person's professional resume profile photo. Remove the large black borders entirely. Keep the exact person's identity, facial structure, facial proportions, neutral expression, hair, subtle beard, eyes, skin tone, pose, navy suit, white shirt, burgundy tie and light neutral studio backdrop unchanged. Do not change his clothes to a white shirt only: this supplied suited portrait is replacing an older website photo where he wore a white shirt. Refine compression artifacts and photo-of-photo softness, retaining natural realistic skin texture and existing likeness rather than reinventing facial details. Clean head-and-upper-torso portrait, centered, matching original photographed area without black margins. Highest available resolution, aim for a 4K portrait master, 2880 x 3840 pixels (3:4 portrait). No text, watermark, borders, glamour retouching or stylization. Save the resulting edited image.
