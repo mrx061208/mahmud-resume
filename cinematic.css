@@ -130,7 +130,7 @@
   .showreel-link:hover { color:#305ce8; }
   .film-corner { position:absolute;top:20px;left:20px;pointer-events:none;font-size:7px;line-height:1.8;letter-spacing:1px;color:#708198; }
   .portfolio .contact-section { background:#edf2ff;padding:73px 0 28px;position:relative;overflow:hidden;border-top:1px solid #dfe7fa;color:#2d3a55; }
-  .portfolio .contact-section:before { content:"✳";position:absolute;right:-45px;top:40px;font-size:360px;line-height:1;color:#cbd8f74a;transform:rotate(20deg);pointer-events:none; }
+  .portfolio .contact-section:before { content:"";position:absolute;right:-45px;top:40px;width:360px;height:360px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='%23cbd8f7' stroke-width='1.6'%3E%3Cpath d='M50 5v90M5 50h90M18 18l64 64M18 82l64-64'/%3E%3C/svg%3E") center / contain no-repeat;opacity:.45;transform:rotate(20deg);pointer-events:none; }
   .portfolio .contact-section:after { content:"";position:absolute;width:230px;height:230px;border:1px solid #cad8f7;border-radius:50%;left:-115px;top:45px;pointer-events:none; }
   .portfolio .contact-heading { position:relative;z-index:1; }
   .portfolio .contact-heading>.eyebrow { color:#7689b3;font-size:8px;letter-spacing:1.5px; }
@@ -208,7 +208,7 @@
     .portfolio .project { grid-template-columns:1fr;gap:26px; }.portfolio .project-art { min-height:320px; }.portfolio .project-copy h3 { font-size:28px; }.portfolio .direction { padding:23px 20px;gap:16px;margin-top:32px; }.portfolio .direction-star { font-size:32px; }
     .motion-section { grid-template-columns:1fr;padding-bottom:58px;gap:26px; }.motion-copy h2 { font-size:30px; }.motion-copy p br { display:none; }.film-label { margin-top:19px; }
     .portfolio .contact-section { padding-top:55px; }.portfolio .contact-heading h2 { font-size:35px;letter-spacing:-1.5px; }.portfolio .contact-heading p { font-size:11px; }.portfolio .contact-email { font-size:clamp(16px,4.7vw,25px);letter-spacing:-.5px;gap:14px;margin-bottom:35px; }
-    .portfolio .contact-section:before { right:-150px;font-size:300px; }.portfolio .contact-section:after { left:-185px; }.portfolio .contact-links { gap:23px; }.portfolio .contact-links>a,.portfolio .contact-links>button { font-size:12px; }.portfolio .site-footer>span { font-size:7px; }
+    .portfolio .contact-section:before { right:-150px;width:300px;height:300px; }.portfolio .contact-section:after { left:-185px; }.portfolio .contact-links { gap:23px; }.portfolio .contact-links>a,.portfolio .contact-links>button { font-size:12px; }.portfolio .site-footer>span { font-size:7px; }
     body.resume-page { padding:0 12px 20px; }.resume-toolbar { gap:10px;font-size:9px; }.resume-toolbar .motion-toggle { font-size:8px; }.resume-page .main-content { padding:30px 24px 25px; }.resume-page .resume-header { padding-top:0; }.resume-page h1 { font-size:clamp(22px,6vw,34px); }.resume-page .resume-header>.ambient-video { inset:-10px -10px;width:calc(100% + 20px);height:calc(100% + 20px); }
   }
   @media(prefers-reduced-motion:reduce) {

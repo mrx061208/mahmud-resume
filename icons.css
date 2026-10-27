@@ -1,0 +1,57 @@
+/* Inline SVG keeps icons identical across Apple, Android and Windows fonts. */
+:root {
+  color-scheme: light;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.ui-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex: 0 0 auto;
+  vertical-align: -0.13em;
+  overflow: visible;
+}
+
+.contact-email .ui-icon,
+.header-contact .ui-icon,
+.button .ui-icon,
+.text-link .ui-icon {
+  width: 1.15em;
+  height: 1.15em;
+}
+
+.photo-corner .ui-icon,
+.skill-symbol .ui-icon,
+.direction-star .ui-icon {
+  width: 0.9em;
+  height: 0.9em;
+}
+
+.contact-links .ui-icon {
+  width: 12px;
+  height: 12px;
+  margin-left: 3px;
+}
+
+.portfolio .contact-links > a > .contact-value {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: inherit;
+  font-size: inherit;
+  letter-spacing: normal;
+}
+
+.motion-toggle .ui-icon {
+  margin-left: 7px;
+}

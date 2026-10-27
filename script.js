@@ -39,7 +39,20 @@ function updateMotion() {
     else video.play().catch(() => {});
   }
   document.querySelectorAll('.motion-toggle').forEach(button => {
-    button.textContent = motionPaused ? 'Включить анимацию ▷' : 'Остановить анимацию Ⅱ';
+    const icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    icon.setAttribute('class', 'ui-icon');
+    icon.setAttribute('viewBox', '0 0 24 24');
+    icon.setAttribute('fill', 'none');
+    icon.setAttribute('stroke', 'currentColor');
+    icon.setAttribute('stroke-width', '1.6');
+    icon.setAttribute('stroke-linecap', 'round');
+    icon.setAttribute('stroke-linejoin', 'round');
+    icon.setAttribute('aria-hidden', 'true');
+    icon.setAttribute('focusable', 'false');
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('d', motionPaused ? 'm9 5 11 7-11 7Z' : 'M8 5v14M16 5v14');
+    icon.append(path);
+    button.replaceChildren(document.createTextNode(motionPaused ? 'Включить анимацию ' : 'Остановить анимацию '), icon);
     button.setAttribute('aria-pressed', String(motionPaused));
   });
   syncFlyovers();
